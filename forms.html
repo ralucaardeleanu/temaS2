@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <style>
+      .container {
+        padding-top: 20px;
+        padding-left: 10px;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <fieldset>
+        <legend>Formular:</legend>
+
+        <form>
+          <label for="name">Nume Complet:</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value="Example Name"
+          /><br /><br />
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value="example123@gmail.com"
+          /><br />
+          <p>Alege modalitatea de plata</p>
+          <input type="radio" id="plata_cash" name="plata" value="plata_cash" />
+          <label for="plata_cash">Plată cash</label><br />
+
+          <input
+            type="radio"
+            id="plata_online_cu_cardul"
+            name="plata"
+            value="plata_online_cu_cardul"
+          />
+          <label for="plata_online_cu_cardul">Plată online cu cardul</label
+          ><br />
+
+          <input
+            type="radio"
+            id="transfer_bancar"
+            name="plata"
+            value="transfer_bancar"
+          />
+          <label for="transfer_bancar">transfer bancar</label>
+          <br />
+          <br />
+
+          <input type="checkbox" id="info" name="info" value="Info" />
+          <label for="info">Doresc să primesc informații pe mail</label><br />
+          <input type="checkbox" id="termini" name="termini" value="termeni" />
+          <label for="termini">Sunt de acord cu termenii și condițiile </label
+          ><br />
+          <br />
+          <br />
+          <input type="submit" value="Submit" />
+        </form>
+      </fieldset>
+    </div>
+  </body>
+</html>
